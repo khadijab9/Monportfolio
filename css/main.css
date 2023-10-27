@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
 .container-presentation {
   position: relative;
@@ -5,7 +6,7 @@
   padding-top: 60px;
 }
 .container-presentation .spanbanckground1 {
-  font-size: 120px;
+  font-size: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -30,10 +31,9 @@
   width: 10%;
   color: black;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .container-presentation .paragraphe {
-  margin-top: 50px;
   font-weight: lighter;
   text-align: center;
   margin-left: 50px;
@@ -59,7 +59,7 @@
   font-size: 50px;
 }
 .containerRealisation .spanbanckground {
-  font-size: 120px;
+  font-size: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -72,7 +72,7 @@
   width: 10%;
   color: black;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .containerRealisation .containerProjet {
   padding-top: 55px;
@@ -107,7 +107,7 @@
   font-size: 50px;
 }
 .container-competence .spanCompetence {
-  font-size: 120px;
+  font-size: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -120,7 +120,7 @@
   width: 10%;
   color: black;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .container-competence .container-skills {
   display: flex;
@@ -141,18 +141,26 @@
 .container-competence .container-skills .bar {
   width: 100%;
   height: 25px;
-  border: 1px solid black;
   background-color: white;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 .container-competence .container-skills .bar .bar-inner {
   position: relative;
-  background-color: aqua;
-  width: 0;
+  background-color: #b9b9e9;
   height: 100%;
   border-radius: 10px;
-  transition: width 0.5s;
+}
+.container-competence .container-skills .bar .bar-inner.visible {
+  animation: scrollLeft 0.9s linear forwards; /* Vitesse de défilement et boucle infinie */
+}
+@keyframes scrollLeft {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(var(--percent) * 1%);
+  }
 }
 
 .container-contact {
@@ -162,7 +170,7 @@
   margin-top: 60px;
 }
 .container-contact .spanContact {
-  font-size: 120px;
+  font-size: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -191,7 +199,7 @@
 .container-contact .container-icon {
   display: flex;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 50px;
   gap: 30px;
 }
 .container-contact .container-icon .icon1 {

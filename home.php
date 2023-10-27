@@ -74,7 +74,7 @@
 
 <section id="competence">
     <div class="container-competence">
-        <span class="spanCompetence"> Mes compétences </span>
+        <span class="spanCompetence"> Compétences </span>
         <h2 class="title-h2">
             Compétences
         </h2>
@@ -86,30 +86,30 @@
                     <h3> Langage Web</h3>
                     <p>HTML</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 75;"></div>
                     </div>
                     <p>CSS</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 75;"></div>
                     </div>
                     <p>PHP</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 50;"></div>
                     </div>
                     <p>JAVASCRIPT</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 60;"></div>
                     </div>
                 </div>
                 <div class="library">
                     <h3>Librairie et CMS</h3>
                     <p>WORDPRESS</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 75;"></div>
                     </div>
                     <p>JQUERY</p>
                     <div class="bar">
-                        <div class="bar-inner" data-percent="70%"></div>
+                        <div class="bar-inner" style="--percent: 40;"></div>
                     </div>
 
                 </div>

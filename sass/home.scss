@@ -7,7 +7,7 @@
   
 
   .spanbanckground1{
-    font-size: 120px;
+    font-size: 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -42,11 +42,11 @@
             width: 10%;
             color: black;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
 
         .paragraphe{
-            margin-top: 50px;
+           
             font-weight: lighter;
             text-align: center;
             margin-left: 50px;
@@ -73,7 +73,7 @@
         font-size: 50px;
     }
     .spanbanckground{
-        font-size: 120px;
+        font-size: 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -89,7 +89,7 @@
         width: 10%;
         color: black;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .containerProjet {
@@ -146,7 +146,7 @@
         }
 
   .spanCompetence{
-    font-size: 120px;
+    font-size: 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -161,7 +161,7 @@
             width: 10%;
             color: black;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
 
 .container-skills{
@@ -195,7 +195,7 @@
     .bar{
         width: 100%;
         height: 25px;
-        border: 1px solid black;
+      
         background-color: white;
         margin-bottom: 20px;
         border-radius: 10px;
@@ -205,18 +205,32 @@
 
      .bar-inner{
         position: relative;
-        background-color: aqua;
-        width: 0;
+        background-color:#b9b9e9;
+    
         height: 100%;
         border-radius: 10px;
-        transition:  width 0.5s;
+        
+        
+        &.visible {
+            animation: scrollLeft 0.9s linear forwards; /* Vitesse de défilement et boucle infinie */
+          }
+            @keyframes scrollLeft {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: calc(var(--percent) * 1%);
+                }
+            }
+            }
+
      }
         
 
     }
 }
 
-    }
+    
 
 
 //section contact
@@ -226,7 +240,7 @@
        padding-top: 60px;
        margin-top: 60px;
    .spanContact{
-    font-size: 120px;
+    font-size: 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -257,7 +271,7 @@
         .container-icon{
             display: flex;
             justify-content: center;
-            margin-top: 55px;
+            margin-top: 50px;
             gap: 30px;
 
             .icon1{
