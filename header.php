@@ -21,7 +21,11 @@
                 </a>
 
             </div>
-            
+            <div class="burgerMenu">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </div>
 
             <?php
             wp_nav_menu(array(

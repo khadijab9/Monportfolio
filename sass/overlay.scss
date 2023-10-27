@@ -1,87 +1,96 @@
 #overlay {
-    position: relative;
-  }
+  position: relative;
+}
+
+.overlay-effect {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+
+  
+
+}
+.btn-post {
+  width: 100%;
+  position: absolute;
+  bottom: 1%;
+
+  //border: 1px solid black;
+  display: none;
+  height: 30px;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  .btn {
+    
+
+    display: flex;
  
-  .overlay-effect {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 10px;
-  }
- 
-  .overlay-link {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
- 
-    &:hover {
-      .overlay-effect {
-        opacity: 1;
-      }
- 
-      .eye-icon {
-        display: block;
-      }
- 
-      .fullscreen-icon {
-        display: block;
-      }
- 
-      .text-overlay {
-        display: block;
-      }
-    }
- 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
- 
-    .eye-icon {
-      display: none;
-      color: white;
-      font-size: 100px;
-      position: absolute;
-      height: 20px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
- 
-    .fullscreen-icon {
-      display: none;
-      font-size: 50px;
-      height: 20px;
-      position: absolute;
-      top: 5%;
-      right: 0;
-      transform: translate(-50%, -50%);
-      z-index: 999;
-      cursor: pointer;
-    }
-  }
- 
-  .text-overlay {
+    justify-content: center;
+    border: none;
+    align-items: center;
+    background-color: #b9b9e9;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
     color: white;
-    display: none;
- 
-    .textFormat {
-      position: absolute;
-      bottom: 2%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  
+  }
+}
+
+.overlay-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    .overlay-effect {
+      opacity: 1;
     }
- 
-    .textCat {
-      position: absolute;
-      bottom: 2%;
-      right: 0;
+
+    .btn-post {
+      display: block;
+    }
+
+    .text-overlay {
+      display: block;
     }
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+}
+
+.text-overlay {
+  color: white;
+  display: none;
+
+  .textFormat {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+}

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 @import 'home';
 @import 'overlay';
+@import 'post';
+@import 'burger';
 
 
 :root {
@@ -24,9 +26,14 @@ margin: 0;
   //  margin-left: 50px;
    // margin-right: 50px;
     position: fixed;
-    z-index: 99;
+    z-index: 10;
     background-color: white;
-
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+ 
+    @media screen and (max-width :810px) {
+      
+    }
 
     .logo-site{
         font-family: 'Akira Expanded Demo';
@@ -38,7 +45,7 @@ margin: 0;
     }
 
     .navbar-nav{
-        display: flex;
+
         list-style: none;
       
         a{
@@ -51,21 +58,23 @@ margin: 0;
                text-decoration:overline;
                opacity: 0.2;
             }
-          
+          &:hover{
+            color: #f5f5f5;
+
+          }
         }
     
     }
 
    .menu-main-menu-container{
     margin-right: 50px;
+   
 
    }
 }
 
 #hero{
 position: relative;
-  
-
 
     height: calc(100vh - 80px); 
  
@@ -76,7 +85,7 @@ position: relative;
 .image-hero{
     position: relative;
     width: 100%;
-    height:auto;
+    height:100vh;
  object-fit: cover;
  
   
@@ -100,12 +109,19 @@ h1 {
   opacity: 0.2;
   
   
-    
+    @media screen and (max-width: 768px){
+        font-size: 50px;
+    }
+    @media screen and (max-width: 576px){
+        font-size: 35px;
+    }
+        
+    }
    
 
 }
 
-}
+
 
 
 @keyframes fadeInUp {
@@ -119,6 +135,24 @@ h1 {
         transform: translateY(0);
     }
 }
+
+
+#footer {
+    background-color: #f5f5f5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textFooter{
+    
+    @media screen and (max-width: 576px){
+font-size: 13px;
+    }
+        
+    }
+    }
+
 
 
 

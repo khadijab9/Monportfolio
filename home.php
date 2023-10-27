@@ -17,9 +17,9 @@
 
     <div class="container-presentation">
 
-        <span class="spanbanckground1"> A PROPOS DE MOI </span>
+        <span class="spanbanckground1"> PRÉSENTATION</span>
         <h2 class="title-h2">
-            PRÉSENTATION
+            A PROPOS
 
         </h2>
 
@@ -38,7 +38,7 @@
     <div class="containerRealisation">
         <span class="spanbanckground"> PORTFOLIO </span>
         <h2 class="title-h2">
-            MES PROJETS
+            PROJETS
         </h2>
 
         <hr class="borderBottom">
@@ -86,30 +86,44 @@
                     <h3> Langage Web</h3>
                     <p>HTML</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 75;"></div>
+                      
+                        <div class="bar-inner" style="--percent: 75;">
+                        <p>75%</p> 
+                    </div>
+
                     </div>
                     <p>CSS</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 75;"></div>
+                        <div class="bar-inner" style="--percent: 75;">
+                        <p>75%</p>
+                    </div>
                     </div>
                     <p>PHP</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 50;"></div>
+                        <div class="bar-inner" style="--percent: 50;">
+                        <p>50%</p>
+                    </div>
                     </div>
                     <p>JAVASCRIPT</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 60;"></div>
+                        <div class="bar-inner" style="--percent: 60;">
+                        <p>60%</p>
+                    </div>
                     </div>
                 </div>
                 <div class="library">
                     <h3>Librairie et CMS</h3>
                     <p>WORDPRESS</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 75;"></div>
+                        <div class="bar-inner" style="--percent: 80;">
+                        <p>80%</p>
+                    </div>
                     </div>
                     <p>JQUERY</p>
                     <div class="bar">
-                        <div class="bar-inner" style="--percent: 40;"></div>
+                        <div class="bar-inner" style="--percent: 40;">
+                        <p>40%</p>
+                    </div>
                     </div>
 
                 </div>
