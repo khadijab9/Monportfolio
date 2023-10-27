@@ -12,3 +12,41 @@ function typeText(text, i) {
 }
 
 typeText(text, 0); // Commence l'animation
+
+
+
+
+jQuery(document).ready(function($) {
+  $('.navbar-nav a').on('click', function() {
+      // Supprimez la classe "active" de tous les liens de navigation
+      $('.navbar-nav a').removeClass('active');
+
+      // Ajoutez la classe "active" uniquement au lien cliqué
+      $(this).addClass('active');
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
