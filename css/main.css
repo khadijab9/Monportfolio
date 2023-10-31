@@ -448,6 +448,15 @@
 }
 .post-content .container-img {
   width: 50%;
+  animation: slideIn 1.5s ease;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Déplacez le container de la gauche */
+  }
+  100% {
+    transform: translateX(0); /* Arrivez à la position d'origine */
+  }
 }
 .post-content .container-img .photoPost {
   width: 100%;
@@ -528,6 +537,15 @@
 }
 .post-content .post-meta {
   width: 50%;
+  animation: FadeRight 1.5s ease;
+}
+@keyframes FadeRight {
+  0% {
+    transform: translateX(100%); /* Déplacez le container de la gauche */
+  }
+  100% {
+    transform: translateX(0); /* Arrivez à la position d'origine */
+  }
 }
 .post-content .post-meta .post-title {
   font-size: 50px;
