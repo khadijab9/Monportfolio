@@ -31,7 +31,7 @@
             wp_nav_menu(array(
                 'theme_location' => 'main-menu', //specifie l'emplacement du menu à afficher
                 'menu_class' => 'navbar-nav mr-auto menu-full',
-                'container' => 'nav',
+                
             )); ?>
         </nav>
     </header>

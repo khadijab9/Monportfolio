@@ -1,3 +1,5 @@
+<?php /* Template Name: Index
+*/ ?>
 <?php get_header(); ?>
 
 
@@ -25,9 +27,19 @@
 
         <hr class="borderBottom">
         <p class="paragraphe">
-            Intéressée depuis de nombreuses années par les métiers du web, j'ai décidé de me lancer dans la formation Developpeur Wordpress proposé par OpenClassroom.
-            J'ai pu acquérir des connaissances approfondies dans le langage web notamment en HTML, Javascript, CSS et PHP ainsi que de l'utilisation avancée du CMS WordPress.
-            Mon parcours m'a permis de travailler sur divers projets qui m'ont permis de simuler une expérience en entreprise.
+        Passionnée du web depuis de nombreuses années, j'ai décidé de me 
+        lancer dans une formation de développeur WordPress chez OpenClassroom. 
+        Cette expérience m'a valu l'acquisition de compétences variées dans le domaine 
+        de la création de sites internet,
+         allant de la création de thèmes personnalisés à l'utilisation de JavaScript pour dynamiser un site web, 
+         en passant par la maîtrise de HTML pour structurer le contenu, de CSS pour la mise en forme, 
+         et de PHP pour des fonctionnalités avancées. De plus, j'ai exploré des outils puissants tels qu'Elementor
+          pour améliorer la conception et l'expérience utilisateur. 
+          Forte de ces capacités, je suis prête à relever de nouveaux défis passionnants dans le monde du développement web.
+
+
+
+            
         </p>
 
     </div>
@@ -88,14 +100,14 @@
                     <div class="bar">
                       
                         <div class="bar-inner" style="--percent: 75;">
-                        <p>75%</p> 
+                        <p>85%</p> 
                     </div>
 
                     </div>
                     <p>CSS</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 75;">
-                        <p>75%</p>
+                        <p>85%</p>
                     </div>
                     </div>
                     <p>PHP</p>
@@ -122,7 +134,7 @@
                     <p>JQUERY</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 40;">
-                        <p>40%</p>
+                        <p>50%</p>
                     </div>
                     </div>
 

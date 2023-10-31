@@ -6,7 +6,7 @@
       'class' => 'photoProjet',
     )) ?>
 
-    <div class="overlay-effect"></div>
+   <div class="overlay-effect"></div> 
     <div class="btn-post">
     <a href="<?php the_permalink(); ?>" class="btn"> Voir</a>
     </div>

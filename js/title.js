@@ -81,18 +81,6 @@ const obs = new IntersectionObserver(entries => {
    obs.observe(bar);
  }); */
 
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
 
  // animation photo portfolio
 
@@ -131,8 +119,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // permet de basculer son affichage en rendant le menu visible ou caché.
       menu.classList.toggle("open");
+
   });
-});
+
+  menu.addEventListener('click', function () {
+    // Retirez la classe "open" du menu et du burger pour le fermer
+    burger.classList.remove('open');
+    menu.classList.remove('open');
+  });
+
+  });
 
 
 

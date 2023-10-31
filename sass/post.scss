@@ -3,37 +3,125 @@
 .containerPost{
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 60px;
    
 }
 .post-content{
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 130px;
     gap : 25px;
 
     @media screen and (max-width: 768px){
      flex-wrap: wrap;;
         
        }
+
+       
  
     .container-img{
         width: 50%;
+      
         .photoPost{
             width: 100%;
             object-fit: cover;
+         
+            height: 800px;
+           
         }
         @media screen and (max-width: 768px){
             width: 100%;
             
            }
+           .arrow{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+         
+          
+           
+            .prev-arrow{
+             //  width: 50%;
+              font-size: 45px;
+               text-decoration: none;
+               color: black;
+               text-align: center;
+               height: 1px;
+               position:relative;
+               transition:0.2s color ease;
+               &:hover{
+                color: #b9b9e9;
+                &:before {
+                    width: 100%;
+                    
+                }
+                &:after {
+                    width: 100%;
+                }
+                
+              }
+            
+            &:after {
+                content: "";
+                transition: 0.5s all ease;
+                position: absolute;
+                bottom: -4rem;
+                height: 4px;
+                width: 0;
+                background: #b9b9e9;
+                left: 50%;
+                transform: translateX(-50%);   
+                width: 0;
+            }
+            
+            }
+            .next-arrow{
+              // width: 50%;
+              font-size: 45px;
+               text-decoration: none;
+             color: black;
+               text-align: center;
+               height:  1px;
+               justify-content: end;
+               display: flex;
+               position:relative;
+               transition:0.2s color ease;
+               &:hover{
+                color: #b9b9e9;
+               
+                &:after {
+                    width: 100%;
+                }
+                
+              }
+            
+            &:after {
+                content: "";
+                transition: 0.5s all ease;
+                position: absolute;
+                bottom: -4rem;
+                height: 4px;
+                width: 0;
+                background: #b9b9e9;
+                left: 50%;
+                transform: translateX(-50%);   
+                width: 0;
+            }
+              
+            }
+           }
       
+    }
+    .post-title{
+        margin-bottom: 10px;
+
     }
     .post-meta{
         width: 50%;
         .post-title{
             font-size: 50px;
             @media screen and (max-width: 768px){
-                margin-top: 0;
+                margin-top: 20px;
         }
     }
         @media screen and (max-width: 768px){
@@ -42,7 +130,14 @@
         
             
            }
+           .meta{
+            font-weight: bold;
+           }
+          .lien{
+            margin-bottom: 0;
+          }
     }
- 
-   
+
 }
+
+ 

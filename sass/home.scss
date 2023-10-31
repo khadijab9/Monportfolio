@@ -131,26 +131,40 @@
         opacity: 0; /* Commencez avec une opacité de 0 pour cacher le contenu */
     transform: translateY(100px); /* Déplacez le contenu vers le haut de 20 pixels */
     transition: opacity 5s ease, transform 3s ease;
+    
 
         &.visible {
             opacity: 1; /* Lorsque la classe "visible" est ajoutée, faites apparaître le contenu */
             transform: translateY(0); /* Déplacez le contenu vers sa position normale */
         }
+
+     
         @media screen and (max-width: 410px){
-            margin-left: 50px;
+          margin-left: 50px;
             margin-right: 50px;
           
                
               }
+              @media screen and (max-width: 664px){
+               // margin-left: 50px;
+                //margin-right: 50px;
+              
+                   
+                  }
 
 
         .photoProjet {
             border-radius: 10px;
             box-sizing: border-box;
+            width: 300px; /* Définissez la largeur fixe que vous souhaitez */
+            height: 200px; /* Définissez la hauteur fixe que vous souhaitez */
+        }
+        }
+   
+           
         }
 
-    }
-}
+    
 
 //section compétence 
 .container-competence {
@@ -270,7 +284,7 @@
                 p{
                     color: white;
                    
-      transform: translateX(80%);
+      //transform: translateX(80%);
                     
                 }
 
