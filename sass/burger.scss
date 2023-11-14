@@ -1,24 +1,23 @@
 .burgerMenu {
     @media screen and (max-width :722px) {
-       width: 50px;
-       height: 35px;
-       display: flex;
-       flex-direction: column;
-     position: relative;
-       left: 25%;
-   
-       @media screen and (max-width: 470px) {
-        margin-right: 50px;
-      }
-     cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 50px;
+        height: 35px;
+        left: 25%;
+
+        @media screen and (max-width: 470px) {
+            margin-right: 50px;
+        }
+
+        cursor: pointer;
         //right: 0;
-       margin-top: 15px;
-    
-    
+        margin-top: 15px;
     }
 
     @media screen and (max-width: 810px) {
-      //  margin-right: 40px;
+        //  margin-right: 40px;
     }
 }
 
@@ -31,81 +30,70 @@
     transition: all 0.7s linear;
 }
 
-
 //Le bouton burger affiche une animation de transition lorsqu'il est activé.
 .burgerMenu.open {
     span {
         &.l2 {
             opacity: 0;
         }
-
         // les deux span pivotent et se dépace pour former une croix
         &.l1 {
             transform: rotate(45deg) translate(6px, 10px);
         }
-
         &.l3 {
             transform: rotate(-45deg) translate(6px, -10px);
         }
     }
-
-    
 }
 
-
-
 .navbar-nav {
-  display: flex;
+    display: flex;
 
     @media screen and (max-width :722px) {
-      // padding-top: 100px; 
-       display: none;
-      position: fixed;
-      left: 0; /* Position en bordure gauche */
-      width: 100%; /* Remplir toute la largeur */
-      height: calc(100vh - 80px);
-      background-color: #f5f5f5;
-      z-index: 999;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: top 1s ease;
-      bottom: 0;
-      margin: 0 !important;
-      padding-left: 0;
-      padding-top: 80px;
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #f5f5f5;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        bottom: 0;
+        margin: 0 !important;
+        padding-left: 0;
+        padding-top: 80px;
 
-      &.open {
-        display: block;
-        animation: fadeMenu 1.5s forwards;
-    }
-   
-
-    }
-       
-        a {
-            @media screen and (max-width :722px) {
-                margin-right: 0 !important;
-                padding-bottom: 40px;
-                padding-left: 0 !important;
-                font-size: 40px !important;
-                color: black;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                font-weight: bold;
-            }
+        &.open {
+            display: block;
+            animation: fadeMenu 1.5s forwards;
         }
     }
 
-    @keyframes fadeMenu {
-        from {
-            opacity: 0;
-            transform: translateY(-100px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
+    a {
+        @media screen and (max-width :722px) {
+            margin-right: 0 !important;
+            padding-bottom: 40px;
+            padding-left: 0 !important;
+            font-size: 40px !important;
+            color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bold;
         }
     }
+}
+
+@keyframes fadeMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

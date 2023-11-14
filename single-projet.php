@@ -45,36 +45,30 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                
+
                 <div class="post-meta">
                     <!-- Données meta de chaque post -->
                     <h2 class="post-title"><?php the_title() ?></h2>
 
-                    <p> <span class="meta">Contexte :</span> <?php echo get_post_meta(get_the_ID(), 'contexte', true); ?></p>
-                    <p> <span class="meta">Description :</span> <?php echo get_post_meta(get_the_ID(), 'description', true); ?></p>
+                    <p> <span class="meta">Contexte :</span> <br> <?php echo get_post_meta(get_the_ID(), 'contexte', true); ?></p>
+                    <p> <span class="meta">Description :</span> <br> <?php echo get_post_meta(get_the_ID(), 'description', true); ?></p>
 
                     <?php $terms = get_the_terms(get_the_ID(), 'technologie'); ?>
                     <?php
                     if (!empty($terms)) {
-                        echo ' <p> <span class="meta">Langages utilisés et CMS : </span> ';
+                        echo ' <p> <span class="meta">Langages utilisés et CMS : </span> <br>';
                         foreach ($terms as $term) {
                             echo $term->name . ' ';
                             $termFound = $term->slug;
                         }
                     }
                     echo '</p>'; ?>
-                    <p class="lien"> <span class="meta">Lien : </span> <?php echo get_post_meta(get_the_ID(), 'lien', true); ?></p>
+                    <p class="lien"> <span class="meta">Lien : </span> <br><?php echo get_post_meta(get_the_ID(), 'lien', true); ?></p>
 
                 </div>
             </div>
         <?php endwhile; ?>
     <?php endif; ?>
 </div>
-
-
-
-
-
-
 
 <?php get_footer(); ?>

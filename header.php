@@ -11,13 +11,12 @@
 
 <body>
 
-
-<header>
+    <header>
         <nav id=navigation>
             <div class=logo-image>
                 <!-- revnoi à l'url de la page d'accueil du site -->
                 <a class="logo-site" href="<?php echo home_url(); ?>">
-                K.B
+                    K.B
                 </a>
 
             </div>
@@ -31,7 +30,6 @@
             wp_nav_menu(array(
                 'theme_location' => 'main-menu', //specifie l'emplacement du menu à afficher
                 'menu_class' => 'navbar-nav mr-auto menu-full',
-                
             )); ?>
         </nav>
     </header>

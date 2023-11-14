@@ -18,30 +18,23 @@
 <section id="presentation">
 
     <div class="container-presentation">
-
         <span class="spanbanckground1"> PRÉSENTATION</span>
         <h2 class="title-h2">
             A PROPOS
-
         </h2>
 
         <hr class="borderBottom">
         <p class="paragraphe">
-        Passionnée du web depuis de nombreuses années, j'ai décidé de me 
-        lancer dans une formation de développeur WordPress chez OpenClassroom. 
-        Cette expérience m'a valu l'acquisition de compétences variées dans le domaine 
-        de la création de sites internet,
-         allant de la création de thèmes personnalisés à l'utilisation de JavaScript pour dynamiser un site web, 
-         en passant par la maîtrise de HTML pour structurer le contenu, de CSS pour la mise en forme, 
-         et de PHP pour des fonctionnalités avancées. De plus, j'ai exploré des outils puissants tels qu'Elementor
-          pour améliorer la conception et l'expérience utilisateur. 
-          Forte de ces capacités, je suis prête à relever de nouveaux défis passionnants dans le monde du développement web.
-
-
-
-            
+            Passionnée du web depuis de nombreuses années, j'ai décidé de me
+            lancer dans une formation de développeur WordPress chez OpenClassroom.
+            Cette expérience m'a valu l'acquisition de compétences variées dans le domaine
+            de la création de sites internet,
+            allant de la création de thèmes personnalisés à l'utilisation de JavaScript pour dynamiser un site web,
+            en passant par la maîtrise de HTML pour structurer le contenu, de CSS pour la mise en forme,
+            et de PHP pour des fonctionnalités avancées. De plus, j'ai exploré des outils puissants tels qu'Elementor
+            pour améliorer la conception et l'expérience utilisateur.
+            Forte de ces capacités, je suis prête à relever de nouveaux défis passionnants dans le monde du développement web.
         </p>
-
     </div>
 </section>
 
@@ -98,29 +91,27 @@
                     <h3> Langage Web</h3>
                     <p>HTML</p>
                     <div class="bar">
-                      
                         <div class="bar-inner" style="--percent: 75;">
-                        <p>85%</p> 
-                    </div>
-
+                            <p>85%</p>
+                        </div>
                     </div>
                     <p>CSS</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 75;">
-                        <p>85%</p>
-                    </div>
+                            <p>85%</p>
+                        </div>
                     </div>
                     <p>PHP</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 50;">
-                        <p>50%</p>
-                    </div>
+                            <p>50%</p>
+                        </div>
                     </div>
                     <p>JAVASCRIPT</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 60;">
-                        <p>60%</p>
-                    </div>
+                            <p>60%</p>
+                        </div>
                     </div>
                 </div>
                 <div class="library">
@@ -128,26 +119,19 @@
                     <p>WORDPRESS</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 80;">
-                        <p>80%</p>
-                    </div>
+                            <p>80%</p>
+                        </div>
                     </div>
                     <p>JQUERY</p>
                     <div class="bar">
                         <div class="bar-inner" style="--percent: 40;">
-                        <p>50%</p>
+                            <p>50%</p>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
-
-
             </div>
-
         </div>
     </div>
-
-
-
 </section>
 
 
@@ -161,7 +145,6 @@
         <p>
             Vous avez un projet ? N'hésitez pas à me contacter
         </p>
-
         <div class="container-icon">
             <a href="mailto:bidari.khadija@hotmail.fr">
                 <img class="icon1" src="<?php echo get_template_directory_uri() . '/assets/images/mail.png'; ?>">
@@ -171,24 +154,7 @@
             </a>
         </div>
     </div>
-
-
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php get_footer(); ?>

@@ -37,13 +37,10 @@ function your_theme_new_customizer_settings($wp_customize)
 }
 add_action('customize_register', 'your_theme_new_customizer_settings');
 
-
-
 // charge les fichiers js
 function enqueue_animations_js()
 {
     wp_enqueue_script('jquery');
     wp_enqueue_script('title_js', get_template_directory_uri() . '/js/title.js', array(), filemtime(get_template_directory() . '/js/title.js'), true);
- 
 }
 add_action('wp_enqueue_scripts', 'enqueue_animations_js');
