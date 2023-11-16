@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Khadija Bidari</title>
+    <title>Portfolio-bk</title>
     <?php wp_head() ?>
 </head>
 
